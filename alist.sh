@@ -6,7 +6,13 @@ mkdir data
 cat > data/config.json <<EOF
 {
   "address": "0.0.0.0",
-  "port": $PORT
+  "port": $PORT,
+  "database": {
+    "type": "sqlite3",
+    "port": 0,
+    "table_prefix": "x_",
+    "db_file": "data/data.db"
+  }
 }
 EOF
 
