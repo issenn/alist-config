@@ -1,0 +1,9 @@
+{
+  "name": "Alist",
+  "description": "Alist on Heroku",
+  "keywords": ["Alist"],
+  "website": "https://hub.docker.com/r/issenn/alist",
+  "repository": "https://github.com/issenn/alist-config",
+  "success_url": "/api/public/settings",
+  "stack": "container"
+}
