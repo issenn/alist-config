@@ -1,9 +1,23 @@
 {
   "name": "Alist",
   "description": "Alist on Heroku",
-  "keywords": ["Alist"],
-  "website": "https://hub.docker.com/r/issenn/alist",
   "repository": "https://github.com/issenn/alist-config",
+  "keywords": [
+    "Alist",
+    "Docker"
+  ],
+  "website": "https://hub.docker.com/r/issenn/alist",
   "success_url": "/",
+  "env": {},
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE_URL",
+      "options": {
+        "version": "13"
+      }
+    },
+    "papertrail"
+  ],
   "stack": "container"
 }
