@@ -9,12 +9,12 @@ cat > data/config.json <<EOF
   "port": ${PORT},
   "local": false,
   "database": {
-    "type": "sqlite3",
-    "user": "",
-    "password": "",
-    "host": "",
-    "port": 0,
-    "name": "",
+    "type": "${DATABASE}",
+    "user": "${DATABASE_USER}",
+    "password": "${DATABASE_PASSWORD}",
+    "host": "${DATABASE_HOST}",
+    "port": ${DATABASE_PORT},
+    "name": "${DATABASE_NAME}",
     "table_prefix": "x_",
     "db_file": "data/data.db"
   }
