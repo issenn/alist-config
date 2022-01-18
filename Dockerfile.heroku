@@ -1,5 +1,6 @@
 FROM xhofe/alist:latest
 
+RUN chmod -R 777 /opt/alist/data
 COPY alist.sh /alist.sh
 RUN chmod +x /alist.sh
 
