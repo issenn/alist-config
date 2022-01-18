@@ -34,14 +34,6 @@
       "value": "alist_db"
     }
   },
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev",
-      "as": "database",
-      "options": {
-        "version": "13"
-      }
-    }
-  ],
+  "addons": [],
   "stack": "container"
 }
