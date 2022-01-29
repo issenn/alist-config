@@ -15,6 +15,7 @@ cat > /opt/alist/data/config.json <<EOF
     "host": "${DATABASE_HOST}",
     "port": ${DATABASE_PORT},
     "name": "${DATABASE_NAME}",
+    "ssl_mode": "${DATABASE_SSL_MODE}",
     "table_prefix": "x_",
     "db_file": "/opt/alist/data/data.db"
   },

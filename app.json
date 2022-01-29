@@ -33,6 +33,10 @@
       "description": "MySQL / PostgreSQL 数据库名称（数据库类型为远程 MySQL / PostgreSQL 时需要更改）",
       "value": "alist_db"
     },
+    "DATABASE_SSL_MODE": {
+      "description": "MySQL / PostgreSQL SSL（数据库类型为远程 MySQL / PostgreSQL 时需要更改）",
+      "value": "disable"
+    },
     "CACHE_EXPIRATION": {
       "description": "缓存失效时间（单位:分钟）",
       "value": "60"
@@ -46,6 +50,14 @@
       "value": "zhimg"
     }
   },
-  "addons": [],
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "database",
+      "options": {
+        "version": "13"
+      }
+    }
+  ],
   "stack": "container"
 }
