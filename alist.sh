@@ -2,6 +2,7 @@
 
 # 创建配置文件目录
 mkdir -p /opt/alist/data/
+mkdir -p "${TEMP_DIR}"
 
 cat > /opt/alist/data/config.json <<EOF
 {
