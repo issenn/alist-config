@@ -47,7 +47,11 @@
     },
     "ASSETS": {
       "description": "静态资源(可选local/jsdelivr/zhimg)",
-      "value": "zhimg"
+      "value": "/"
+    },
+    "TEMP_DIR": {
+      "description": "临时文件",
+      "value": "/opt/alist/data/temp"
     }
   },
   "addons": [
