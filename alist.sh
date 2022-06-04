@@ -8,6 +8,7 @@ cat > /opt/alist/data/config.json <<EOF
   "address": "0.0.0.0",
   "port": ${PORT},
   "assets": "${ASSETS}",
+  "temp_dir": "${TEMP_DIR}",
   "database": {
     "type": "${DATABASE_TYPE}",
     "user": "${DATABASE_USER}",
